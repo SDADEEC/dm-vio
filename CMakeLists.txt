@@ -39,12 +39,12 @@ IF(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     include_directories(/usr/local/include)
     link_directories(/usr/local/lib)
 ENDIF(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
-
+#set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 # flags
 add_definitions("-DENABLE_SSE")
 set(CMAKE_CXX_FLAGS
-    "${SSE_FLAGS}"
+    "${SSE_FLAGS} -fPIC"
 )
 set(CMAKE_CXX_FLAGS_DEBUG
 	"-O2 -g -fno-omit-frame-pointer -DEIGEN_INITIALIZE_MATRICES_WITH_NAN -DDEBUG ${STACKTRACE_DEFINES}"
