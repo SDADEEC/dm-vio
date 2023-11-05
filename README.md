@@ -69,7 +69,7 @@ Install with
 
 
 ##### Pangolin.
-Like for DSO, this is used for the GUI. You should install v0.6.
+Like for DSO, this is used for the GUI. **You should install v0.6. !!!**
 Install from [https://github.com/stevenlovegrove/Pangolin](https://github.com/stevenlovegrove/Pangolin)
 
 
